@@ -8,12 +8,12 @@ struct vector {
 	vec_type* data;
 	unsigned long lenth;
 	unsigned long capacity;
-	unsigned long end_addr;
 };
 
 typedef struct vector Vector;
 
 
+Vector vec_init(int);
 bool vec_empty(const Vector);
 bool vec_full(const Vector);
 void vec_push_back(Vector*, const vec_type);
