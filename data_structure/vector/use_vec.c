@@ -15,4 +15,15 @@ int main(void){
 	printf("vec.capacity : %lu\n", vec.capacity);
 	vec_type pop_num = vec_pop_back(vecp);
 	printf(" pop_num : %d\n", pop_num);
+	vec_print(vec, "int");
+	vec_insert(vecp, 2, 100);
+	printf("insert 100 at index 2\n");
+	vec_print(vec, "int");
+	vec_delete(vecp, 3);
+	printf("delete val at index 3\n");
+	vec_print(vec, "int");
+	printf("vec length: %lu\n", vec_length(vec));
+	printf("vec capacity: %lu\n", vec_capacity(vec));
+	vec_release(vecp);
+
 }
